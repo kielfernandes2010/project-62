@@ -1,0 +1,19 @@
+#picture {
+    width: 330px;
+    height: 275px;
+}
+
+body {
+    text-align: center;
+    background-image: radial-gradient( red, yellow, green)
+}
+
+#picture1 {
+    width: 1750px;
+    height: 600px;
+}
+
+#picture2 {
+    width: 1100px;
+    height: 600px;
+}

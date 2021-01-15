@@ -1,0 +1,228 @@
+!DOCTYPE html>
+<html>
+
+<head>
+    <title> Picture Gallery </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://images.squarespace-cdn.com/content/v1/56e733a98259b524f55c11ff/1464203889754-7J6CISWGVJ5UAXF1KXYO/ke17ZwdGBToddI8pDm48kNvT88LknE-K9M4pGNO0Iqd7gQa3H78H3Y0txjaiv_0fMd-BlcF4RpG1NxMpmwFlTwLQ8_8X0oy76V-mtBVqaZ_o8HbKjlB3UeKJEwFtT03xOqpeNLcJ80NK65_fV7S1UcNwpcYwsGcFZWEeVHvsPzty4_IopT-oMWLdPjzij9CF7zs2yPjc1ECvpa5Zm_kMqw/Avengers_Thumbnail_02.jpg?format=1000w">
+        <br>
+        <br>
+        <br>
+        <h1> Grid Gallery </h1>
+        <br>
+        <img id="picture" src="https://cnet1.cbsistatic.com/img/sgyIXao68UwIsieNEt7fuSkOAsc=/940x0/2015/04/24/370160b3-857f-4248-9819-dc36c468c281/avengers254d1158022f16.jpg">
+        <img id="picture" src="https://static.onecms.io/wp-content/uploads/sites/20/2019/01/books-11-2000.jpg">
+        <img id="picture" src="https://i.redd.it/s32dchfsy8q21.jpg">
+        <img id="picture" src="https://imgix.bustle.com/uploads/image/2020/6/17/9d67f705-d6cb-4e44-a98d-37c21108cef5-tony-iron-man.jpg">
+        <br>
+        <img id="picture" src="https://m.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/11/10/Pictures/_fea09362-e4d7-11e8-a684-a3b63261dee4.JPG">
+        <img id="picture" src="https://m.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/08/31/Pictures/_477cc93a-acfb-11e8-abd2-5c322fa89f61.jpg">
+        <img id="picture" src="https://m0.her.ie/wp-content/uploads/2019/08/10122119/bb2456726a2291e7ac9325e5b7e747530cfd4333.jpg">
+        <img id="picture" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBDEU3rmU101wMDhSuD53rNetH7vgRvrGvAQ&usqp=CAU">
+        <br>
+        <br>
+        <h1> Sliding Gallery </h1>
+        <style>
+            * {
+                box-sizing: border-box
+            }
+
+            body {
+                font-family: Verdana, sans-serif;
+                margin: 0
+            }
+
+            .mySlides {
+                display: none
+            }
+
+            img {
+                vertical-align: middle;
+            }
+
+            .slideshow-container {
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+            }
+
+            .prev,
+            .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                margin-top: -22px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+            }
+
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+
+            .prev:hover,
+            .next:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+
+            .text {
+                color: #f2f2f2;
+                font-size: 15px;
+                padding: 8px 12px;
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+                text-align: center;
+            }
+
+            .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+
+            .dot {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+
+            .active,
+            .dot:hover {
+                background-color: #717171;
+            }
+
+            .fade {
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 1.5s;
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+
+        </style>
+
+        <body>
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 8</div>
+                    <img id="picture1" src="https://cnet1.cbsistatic.com/img/sgyIXao68UwIsieNEt7fuSkOAsc=/940x0/2015/04/24/370160b3-857f-4248-9819-dc36c468c281/avengers254d1158022f16.jpg" style="width:100%">
+                    <div class="text"> Captain America </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 8</div>
+                    <img id="picture1" src="https://static.onecms.io/wp-content/uploads/sites/20/2019/01/books-11-2000.jpg" style="width:100%">
+                    <div class="text"> Black Panther </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 8</div>
+                    <img id="picture1" src="https://i.redd.it/s32dchfsy8q21.jpg" style="width:100%">
+                    <div class="text"> Hulk </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 8</div>
+                    <img id="picture1" src="https://imgix.bustle.com/uploads/image/2020/6/17/9d67f705-d6cb-4e44-a98d-37c21108cef5-tony-iron-man.jpg" style="width:100%">
+                    <div class="text"> Iron Man </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 8</div>
+                    <img id="picture1" src="https://m.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/11/10/Pictures/_fea09362-e4d7-11e8-a684-a3b63261dee4.JPG" style="width:100%">
+                    <div class="text"> Thanos </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 8</div>
+                    <img id="picture1" src="https://m.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/08/31/Pictures/_477cc93a-acfb-11e8-abd2-5c322fa89f61.jpg" style="width:100%">
+                    <div class="text"> Thor </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">7 / 8</div>
+                    <img id="picture1" src="https://m0.her.ie/wp-content/uploads/2019/08/10122119/bb2456726a2291e7ac9325e5b7e747530cfd4333.jpg" style="width:100%">
+                    <div class="text"> Gamora </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">8 / 8</div>
+                    <img id="picture2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBDEU3rmU101wMDhSuD53rNetH7vgRvrGvAQ&usqp=CAU">
+                    <div class="text"> Captain Marvel </div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+            </div>
+
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = slides.length
+                    }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+
+            </script>
+
+
+        </body>
+
+</html>
